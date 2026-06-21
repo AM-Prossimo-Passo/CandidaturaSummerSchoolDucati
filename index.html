@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="dark" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Aurora Marinoni | Candidatura Ducati Summer Campus</title>
+    
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Lato:wght@300;400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#CE161E", /* Rosso Ducati */
+                      "primary-container": "#CE161E",
+                      "on-primary": "#ffffff",
+                      "background": "#0a0a0a", /* Sfondo Scuro Originale */
+                      "surface": "#0a0a0a",
+                      "surface-base": "#141414", /* Card Background Originale */
+                      "surface-container": "#141414",
+                      "surface-container-low": "#0f0f0f",
+                      "on-surface": "#ffffff",
+                      "on-surface-variant": "#a0a0a0", /* Testo Muted Originale */
+                      "outline-variant": "#262626", /* Bordo Originale */
+                      "error": "#ffb4ab",
+                      "glow-red": "rgba(206, 22, 30, 0.4)"
+              },
+              "fontFamily": {
+                      "code-sm": ["JetBrains Mono", "monospace"],
+                      "display-lg": ["Poppins", "sans-serif"],
+                      "headline-lg": ["Poppins", "sans-serif"],
+                      "body-md": ["Lato", "sans-serif"]
+              }
+            },
+          },
+        }
+    </script>
+    
+    <style>
+        .scanlines {
+            background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.15) 50%, rgba(0,0,0,0.15));
+            background-size: 100% 4px;
+        }
+        .glitch-hover {
+            transition: all 0.3s ease;
+        }
+        .glitch-hover:hover {
+            transform: translateX(15px);
+            text-shadow: 3px 0 rgba(206, 22, 30, 0.6), -3px 0 rgba(255, 255, 255, 0.3);
+            color: #CE161E;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .scrollbar-none::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-none {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden relative">
+
+    <div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] rounded-full bg-primary/5 blur-[100px]"></div>
+        <div class="absolute inset-0 scanlines opacity-10"></div>
+    </div>
+
+    <header class="fixed top-0 w-full z-50 bg-background/95 border-b border-outline-variant backdrop-blur-md flex justify-between items-center px-6 md:px-12 h-16">
+        <div class="font-display-lg text-lg md:text-xl tracking-wider text-white font-bold flex items-center gap-2 uppercase">
+            <i class="fa-solid fa-motorcycle text-primary"></i> AURORA MARINONI
+        </div>
+        <nav class="hidden md:flex gap-6">
+            <a href="#home" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Home</a>
+            <a href="#il-mio-profilo" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Profilo</a>
+            <a href="#passioni-e-interessi" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Passioni</a>
+            <a href="#prospettive-future" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Prospettive</a>
+            <a href="#perche-candidarsi" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Perché</a>
+            <a href="#aspettative" class="text-xs font-bold font-code-sm text-on-surface-variant hover:text-primary uppercase tracking-wider transition-all">Aspettative</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative min-h-screen flex items-center justify-start px-6 md:px-24 pt-16 border-b border-outline-variant">
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/90 via-[#0a0a0a]/70 to-transparent z-10"></div>
+                <img class="w-full h-full object-cover opacity-30 grayscale brightness-75" alt="Liceo Ingresso" src="LICEO INGRESSO.jpg"/>
+            </div>
+            
+            <div class="relative z-10 max-w-4xl w-full text-left">
+                <h1 class="font-display-lg text-4xl md:text-6xl font-extrabold leading-none mb-6 text-on-surface uppercase tracking-tight">
+                    INGEGNERIA, VIAGGI E LIBERTÀ:<br><span class="text-primary">LA MECCANICA DELLE COSE</span>
+                </h1>
+                <p class="font-body-md text-base md:text-xl text-on-surface-variant max-w-2xl mb-8">
+                    Candidatura ufficiale per la partecipazione al progetto educational "Fisica in Moto" presso il Ducati Summer Campus.
+                </p>
+                <a href="#il-mio-profilo" class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white hover:bg-[#b01218] transition-all duration-300 rounded font-display-lg font-bold uppercase tracking-wider text-sm transform hover:-translate-y-1">
+                    Esplora il profilo <i class="fa-solid fa-arrow-down text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="il-mio-profilo" class="max-w-6xl mx-auto px-6 py-24 border-b border-outline-variant scroll-mt-16">
+            <h2 class="font-display-lg text-2xl md:text-3xl font-bold text-on-surface mb-12 glitch-hover inline-block cursor-default select-none uppercase pb-2 border-b-4 border-primary">
+                <i class="fa-solid fa-user-gear text-primary mr-2"></i> IL MIO PROFILO
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-display-lg text-xl text-white mb-4 font-bold uppercase tracking-wide">L'EREDITÀ CHE MI È STATA DATA</h3>
+                    <p class="text-body-md text-on-surface-variant leading-relaxed mb-4 text-justify">
+                        Sono Aurora Marinoni, studentessa del Liceo Scientifico “Edoardo Amaldi” di Bergamo. Fin dall’inizio del mio percorso scolastico ho avuto una profonda passione per la matematica in ogni sua forma: sia per la pura soddisfazione personale nel decifrare i ragionamenti logici sia per un legame affettivo ed emotivo trasmessomi da mio nonno.
+                    </p>
+                    <p class="text-body-md text-on-surface-variant leading-relaxed text-justify">
+                        Per me la matematica, la logica e la spiegazione scientifica non sono solo strumenti per comprendere il mondo che mi circonda, ma rappresentano un filo conduttore che mi permette di portare sempre con me le mie radici e la mia famiglia.
+                    </p>
+                </div>
+                <div class="border border-outline-variant rounded-lg p-2 bg-surface-base shadow-2xl overflow-hidden flex items-center justify-center max-h-[320px] aspect-video mx-auto w-full">
+                    <img class="w-full h-full object-contain rounded filter grayscale opacity-70 hover:opacity-100 hover:grayscale-0 transition-all duration-500" alt="Aurora Marinoni Profilo" src="1.jpeg"/>
+                </div>
+            </div>
+        </section>
+
+        <section id="passioni-e-interessi" class="max-w-6xl mx-auto px-6 py-24 border-b border-outline-variant scroll-mt-16">
+            <h2 class="font-display-lg text-2xl md:text-3xl font-bold text-on-surface mb-12 glitch-hover inline-block cursor-default select-none uppercase pb-2 border-b-4 border-primary">
+                <i class="fa-solid fa-gauge-high text-primary mr-2"></i> PASSIONI E INTERESSI
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Viaggi 1" src="6F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Viaggi 2" src="15M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Viaggi 3" src="7F.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/80 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-compass text-base text-primary"></i> VIAGGI ED ESPLORAZIONE
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">Considero il viaggio come una vera e propria scuola di vita e, ogni volta che se ne presenta l'opportunità, amo mettermi in gioco. Fin da piccola, i miei genitori mi hanno abituata a esplorare il mondo: dalle grandi città ai piccoli borghi nascosti della mia provincia. Per me viaggiare significa sia condividere moments preziosi in compagnia, sia vivere spazi di riflessione in solitaria; è il modo perfetto per staccare dalla quotidianità, scoprire nuove realtà e aprire la mente.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Pagine 1" src="2.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Pagine 2" src="3.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/80 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-book-open text-base text-primary"></i> IL MIO RIFUGIO TRA LE PAGINE
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">Inizialmente i fumetti del topolino e ora i libri mi trasmettono protezione, scoperta e una spinta a lasciarmi andare, a proiettarmi in dinamiche anche fuori dall’ordinario. È per questo che amo immergermi nella lettura. Una particolarità però, che vale per qualunque cosa, le pagine bisogna sentirle, bisogna sfogliarle e non guardarle attraverso uno schermo.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded overflow-hidden flex items-center justify-center bg-surface-container-low max-h-[220px] aspect-video w-full mx-auto">
+                        <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" alt="Cultura dei Motori" src="13M.jpeg"/>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-motorcycle text-base text-primary"></i> CULTURA DEI MOTORI
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">Il mio inizio nel mondo delle due e quattro ruote lo devo a mio padre. Fin dall’infanzia mi ha raccontato la storia delle grandi case automobilistiche e motociclistiche, portandomi a mostre, gare di rally e fiere conosciute come il MBE di Verona ed EICMA. La mia è una passione profonda: guardare i motori attraverso uno schermo mi annoia, perché non restituisce la stessa magia, le stesse emozioni. Ho bisogno di viverli dal vivo, di assaporarne l'atmosfera, di ascoltare il loro rombo e respirare l’odore rilasciato dalle vetture. È un fascino a cui non riesco a resistere, non riesco a non distogliere lo sguardo.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Neve 1" src="3N.jpeg"/>
+                            <div class="w-full h-full shrink-0 snap-start bg-black flex items-center justify-center">
+                                <video class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" autoplay loop muted playsinline>
+                                    <source src="2N.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Neve 2" src="1N.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri Multimedia
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-snowflake text-base text-primary"></i> ADRENALINA BIANCA
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">La neve è il mio ambiente: soffro molto il caldo e l'aria pungente sul viso e quella sensazione di freschezza assoluta mi rigenerano. Pratico snowboard ogni volta che mi è possibile, è uno sport fatto di adrenalina pura, ma il bello arriva quando la discesa finisce. Condividere le piste, le avventure e le risate con gli amici rende ogni giornata in montagna unica.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 1" src="1F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 2" src="2F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 3" src="3F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 4" src="4F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 5" src="5F.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Foto 6" src="8F.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-camera-retro text-base text-primary"></i> OLTRE L’ORDINARIO
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">Trovo bella l’idea di catturare l'essenza di un istante e fermare il tempo in un'immagine. Osservare il mondo alla ricerca di soggetti particolari e fuori dal comune o di paesaggi con colori che ricordano il caldo del camino acceso d’inverno è per me un qualcosa di prezioso. Ecco perché tendo solo a fotografare ciò che mi trasmette emozioni.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded overflow-hidden flex items-center justify-center bg-surface-container-low max-h-[220px] aspect-video w-full mx-auto">
+                        <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500" alt="Musica e Violino" src="4.jpeg"/>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-music text-base text-primary"></i> ACCORDI E CONTRASTI
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">La musica ha il potere di cambiare le mie emozioni e la scelta di cosa ascoltare dipende sempre dal mood della mia giornata. Per questo ascolto davvero di tutto e, quando posso, amo vivere l'energia pura degli eventi dal vivo. Questa passione diventa ancora più vissuta quando mi sento libera dalle inibizioni e mi lascio andare sulle note di una canzone ballando o suonando il mio violino.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 1" src="9M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 2" src="8M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 3" src="11M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 4" src="7M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 5" src="12M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 6" src="14M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Guidare 7" src="1M.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-road text-base text-primary"></i> GUIDARE
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">I veicoli mi trasmettono da sempre un senso di libertà, ebrezza e una spinta ad andare oltre i limiti, di mettermi alla prova. È per questo che amo fare lunghi giri sulla mia moto, che cambierò quando ne avrò l’occasione per poter raggiungere tutti i posti lontani che mi immagino. Salire su qualsiasi mezzo abbia un motore regala quel sogno di superamento del limite umano che va oltre l'immaginazione. La cosa più incredibile per me è che tutto questo non è magia: sono fenomeni spiegabili, e proprio per questo sono ancora più affascinanti e apprezzabili.</p>
+                    </div>
+                </div>
+
+                <div class="bg-surface-base border border-outline-variant hover:border-primary p-6 rounded-lg transition-all duration-300 flex flex-col gap-4 group hover:-translate-y-1 shadow-md">
+                    <div class="border border-outline-variant rounded bg-surface-container-low relative flex items-center justify-center max-h-[220px] aspect-video w-full mx-auto overflow-hidden">
+                        <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Meccanica 1" src="6M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Meccanica 2" src="2M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Meccanica 3" src="4M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Meccanica 4" src="15M.jpeg"/>
+                            <img class="w-full h-full object-contain filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Meccanica 5" src="5M.jpeg"/>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/70 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                            <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-display-lg font-bold text-white text-lg mb-2 uppercase flex items-center gap-2 group-hover:text-primary transition-colors duration-300">
+                            <i class="fa-solid fa-screwdriver-wrench text-base text-primary"></i> MECCANICA E CASA
+                        </h4>
+                        <p class="text-sm text-on-surface-variant leading-relaxed text-justify">Trovo affascinante comprendere gli ingranaggi e l’armonia che muove un motore. Osservare come un macchinario sia stato progettato e costruito è per me un'esperienza coinvolgente. Tuttavia, penso che lo studio teorico non debba mai superare l’emozione pura che si prova nel sentire quel motore accendersi e funzionare. Questa passione per la dinamica e la tecnica, che coltivo fin da piccola, mi fa sentire a casa e rappresenta il mio equilibrio ideale che vorrei poter portare avanti in un futuro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prospettive-future" class="max-w-6xl mx-auto px-6 py-24 border-b border-outline-variant scroll-mt-16">
+            <h2 class="font-display-lg text-2xl md:text-3xl font-bold text-on-surface mb-12 glitch-hover inline-block cursor-default select-none uppercase pb-2 border-b-4 border-primary">
+                <i class="fa-solid fa-compass text-primary mr-2"></i> PROSPETTIVE FUTURE
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="font-display-lg text-xl text-white mb-4 font-bold uppercase tracking-wide">SOGNO NEL CASSETTO</h3>
+                    <p class="text-body-md text-on-surface-variant leading-relaxed mb-4 text-justify">
+                        Il mio obiettivo a lungo termine è far convergere i miei due grandi interessi: la matematica e la dinamica dei motori. Per questo motivo ho presentato la mia candidatura alla facoltà di Ingegneria al Politecnico di Milano, con l'ambizione di entrare a far parte dei progetti studenteschi PMF e Dynamis PRC, eccellenze che gareggiano a livello europeo nella progettazione Formula Student.
+                    </p>
+                    <p class="text-body-md text-on-surface-variant leading-relaxed text-justify">
+                        La mia massima aspirazione professionale è lavorare nella progettazione e nel testing, studiando la dinamica di modelli innovativi per poi vederli e provarli direttamente. Perché secondo me un buon equilibrio tra doveri e divertimenti è ciò di cui si ha bisogno per vivere la propria vita al meglio.
+                    </p>
+                </div>
+                <div class="border border-outline-variant rounded-lg p-2 bg-surface-base shadow-2xl overflow-hidden relative flex items-center justify-center max-h-[320px] aspect-video mx-auto w-full group">
+                    <div class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none w-full h-full items-center">
+                        <img class="w-full h-full object-contain rounded filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Prospettive 1" src="1S.jpeg"/>
+                        <img class="w-full h-full object-contain rounded filter grayscale opacity-60 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 shrink-0 snap-start" alt="Prospettive 2" src="2S.JPG"/>
+                    </div>
+                    <div class="absolute bottom-2 right-2 bg-black/70 text-[10px] text-white px-2 py-0.5 rounded font-code-sm pointer-events-none opacity-60 group-hover:opacity-100 transition-opacity">
+                        <i class="fa-solid fa-left-right mr-1"></i> Scorri foto
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="perche-candidarsi" class="max-w-6xl mx-auto px-6 py-24 border-b border-outline-variant scroll-mt-16">
+            <h2 class="font-display-lg text-2xl md:text-3xl font-bold text-on-surface mb-12 glitch-hover inline-block cursor-default select-none uppercase pb-2 border-b-4 border-primary">
+                <i class="fa-solid fa-road text-primary mr-2"></i> PERCHÉ CANDIDARSI
+            </h2>
+            <div class="max-w-4xl mx-auto bg-surface-base border border-outline-variant p-8 rounded-lg shadow-xl">
+                <h3 class="font-display-lg text-xl text-white mb-4 font-bold uppercase tracking-wide">OLTRE IL CURRICULUM</h3>
+                <p class="text-body-md text-on-surface-variant leading-relaxed mb-4 text-justify">
+                    La candidatura al Ducati Summer Campus rappresenta il punto d'incontro ideale tra il rigore analitico dei sistemi informatici e ingegneristici e la pura passione per il movimento e la dinamica dei fluidi.
+                </p>
+                <p class="text-body-md text-on-surface-variant leading-relaxed text-justify">
+                    Entrare in un ecosistema dove la fisica non è solo teoria ma performance pura su pista permette di accelerare l'apprendimento e di testare soluzioni innovative a stretto contatto con standard industriali di eccellenza mondiale.
+                </p>
+            </div>
+        </section>
+
+        <section id="aspettative" class="max-w-6xl mx-auto px-6 py-24 scroll-mt-16">
+            <h2 class="font-display-lg text-2xl md:text-3xl font-bold text-on-surface mb-12 glitch-hover inline-block cursor-default select-none uppercase pb-2 border-b-4 border-primary">
+                <i class="fa-solid fa-flag-checkered text-primary mr-2"></i> ASPETTATIVE
+            </h2>
+            <div class="max-w-4xl mx-auto bg-surface-base border border-outline-variant p-8 rounded-lg shadow-xl">
+                <h3 class="font-display-lg text-xl text-white mb-4 font-bold uppercase tracking-wide">DETERMINAZIONE E RESILIENZA</h3>
+                <p class="text-body-md text-on-surface-variant leading-relaxed mb-4 text-justify">
+                    Essere scelta per questo Campus sarebbe un'opportunità e un’ottima esperienza di vita. Sono consapevole che la selezione per soli 24 posti in tutta Italia rende la competizione altissima, ma questo non mi scoraggia, anzi mi stimola.
+                </p>
+                <p class="text-body-md text-on-surface-variant leading-relaxed text-justify">
+                    Anche se non dovessi essere accettata, non ne farò un dramma a lungo termine: trasformerò questa esperienza in una lezione, imparando a mettermi in gioco ancora di più e a impegnarmi con una grinta ancora maggiore.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full bg-[#050505] border-t border-outline-variant py-12 flex flex-col items-center justify-center gap-2">
+        <h2 class="font-display-lg text-2xl font-bold text-primary tracking-wider uppercase">Aurora Marinoni</h2>
+        <p class="font-code-sm text-xs text-white uppercase tracking-wider font-semibold">
+            Candidatura Ducati Summer Campus 2026 — Fisica in Moto
+        </p>
+        <p class="text-sm text-on-surface-variant mt-4 font-body-md">
+            Email: <a href="mailto:aurora.marinoni@email.it" class="hover:text-primary transition-colors">aurora.marinoni@email.it</a>
+        </p>
+    </footer>
+
+</body>
+</html>
